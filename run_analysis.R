@@ -54,7 +54,6 @@ names(Data)<-gsub("Mag", "Magnitude", names(Data))
 names(Data)<-gsub("BodyBody", "Body", names(Data))
 
 ## Subset of the average of each variable for each activity and each subject
-# library(plyr)
 meanData <- aggregate(. ~ subject + activity, Data, mean)
 meanData <- meanData[order(meanData$subject,meanData$activity),]
 
