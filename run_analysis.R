@@ -10,7 +10,7 @@ if(!file.exists("./UCI HAR Dataset")){
   unzip(zipfile="./UCI HAR Dataset.zip")
 }
 
-## Setting working directory to unzipped folder
+## Defining file path to unzipped data
 fpath <- file.path("UCI HAR Dataset")
 
 ## Reading files
